@@ -1,0 +1,58 @@
+*, * *{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+p, h1, h2, a, body{
+	font-family: "Segoe UI";
+}
+
+.colors{
+	Rød: #86120E;
+	Hvid: #ffffff;
+	Grøn: #129A55;
+	Grå: #4E5359;
+}
+
+.flex{
+	display: flex;
+}
+
+.jcsb{
+	justify-content: space-between;
+}
+
+
+
+
+
+
+.top-bar{
+	padding-top: 20px;
+	border-bottom: solid 4px #129A55;
+
+	align-items: flex-end;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+.logo{
+	height: 65px;
+	margin-left: 40px;
+}
+
+.menu{
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.menu li{
+	text-align: center;
+}
+
+.menu a{
+	padding: 5px 20px;
+	font-size: 18px;
+}
+
