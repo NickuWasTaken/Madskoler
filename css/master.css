@@ -35,6 +35,7 @@ p, h1, h2, a, body{
 /*	display: flex;
 	align-items: center;
 	justify-content: center;*/
+	height: 10%;
 }
 
 
@@ -177,15 +178,24 @@ main p{
 
 /*tab galleri*/
 
+.row {
+	height: 100%;
+	position: relative;
+}
+
 .column {
+	position: relative;
   float: left;
-  width: 25%;
+	height: 100%;
+	width: 25%;
   padding: 10px;
 }
 
 .column img {
   opacity: 0.8;
   cursor: pointer;
+	object-fit: cover;
+	height: 100%;
 }
 
 .column img:hover {
