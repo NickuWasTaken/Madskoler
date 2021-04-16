@@ -32,9 +32,9 @@ p, h1, h2, a, body{
 }
 
 .center{
-	display: flex;
+/*	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;*/
 }
 
 
@@ -67,7 +67,7 @@ p, h1, h2, a, body{
 	padding: 5px 20px;
 	font-size: 18px;
 	color: #4E5359;
-	font-weight: 600;	
+	font-weight: 600;
 }
 
 .menu .selected a{
@@ -83,7 +83,7 @@ aside{
 .crumbs{
 	max-width: 400px;
 	min-width: 260px;
-	margin-left: 40px;	
+	margin-left: 40px;
 }
 
 .crumbs a, .crumbs i{
@@ -91,7 +91,7 @@ aside{
 }
 
 .crumbs * {
-	display: inline-block;	
+	display: inline-block;
 }
 
 .inner-nav{
@@ -173,4 +173,49 @@ main p{
 	flex-direction: column;
 	width: 160px;
 	justify-content: space-between;
+}
+
+/*tab galleri*/
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/master.css">
 	<script src="https://kit.fontawesome.com/9464e3997a.js" crossorigin="anonymous" defer></script>
+	<script src="js/galleryScript.js" defer></script>
 	<title>Bliv frivillig!</title>
 </head>
 <body>
@@ -48,19 +49,40 @@
 
 		</p>
 		<div class="center">
-			<div class="galleri">
+			<!--<div class="galleri">
 				<img src="img/madskoler-kort-fortalt-2.gif" alt="" class="large">
 				<div class="flex galleri-nav">
 					<img src="img/Madskole-instruktør.jpg" alt="" class="small">
 					<img src="img/madskole-frivillig-instruktor.gif" alt="" class="small">
 					<img src="img/Instruktør-aeldre.jpg" alt="" class="small">
 				</div>
+			</div>-->
+
+			<div class="row">
+  			<div class="column">
+    			<img src="img/madskoler-kort-fortalt-2.gif" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+    			<img src="img/Madskole-instruktør.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+    			<img src="img/madskole-frivillig-instruktor.gif" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+    			<img src="img/Instruktør-aeldre.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	  			</div>
 			</div>
+			<div class="container">
+  			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  			<img id="expandedImg" style="width:100%">
+  			<div id="imgtext"></div>
+			</div>
+
 		</div>
 		<p class="gallery-desc" id="galleri-desc">
-			Galleri tekst: Som frivillig instruktør på en Madskole giver du viden om madlavning, kost og sund livsstil 
-			videre til børn og unge. Samtidig får du en uforglemmelig oplevelse med en masse glade børn og 
-			opbygger faglige kompetencer i blandt andet ernæringsformidling, didaktik og projektkoordinering, 
+			Galleri tekst: Som frivillig instruktør på en Madskole giver du viden om madlavning, kost og sund livsstil
+			videre til børn og unge. Samtidig får du en uforglemmelig oplevelse med en masse glade børn og
+			opbygger faglige kompetencer i blandt andet ernæringsformidling, didaktik og projektkoordinering,
 			som kan skrives på dit CV.
 		</p>
 	</main>
