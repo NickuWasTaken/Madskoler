@@ -6,6 +6,10 @@
 	color: #4E5359;
 }
 
+html, body{
+	width: 100%;
+}
+
 p, h1, h2, a, body{
 	font-family: "Segoe UI";
 }
@@ -192,4 +196,92 @@ main p{
 	left: 15px;
 	color: white;
 	font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 1450px) {
+	.inner-nav{
+		margin-right: 0;
+	}
+
+	main {
+		margin-left: 60px;
+	}
+}
+
+@media only screen and (max-width: 1320px) {
+
+	.inner-nav{
+		width: 300px;
+		min-width: 0;
+	}
+
+	main {
+		min-width: 300px;
+		margin-right: 40px;
+	}
+
+	.galleri{
+		flex-direction: column;
+		width: 95%;
+	}
+
+	.galleri-nav{
+		flex-direction: row;
+		width: 100%;
+		min-width: 300px;
+		max-width: 800px;
+		margin-left: 0;
+		align-content: space-between;
+	}
+
+	.galleri-nav .small{
+		width: 24%;
+		margin-right: 1.33%;
+	}
+
+	.large{
+		height: inherit;
+		min-width: 300px;
+		max-width: 800px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+
+	main{
+		margin-left: 30px;
+		margin-right: 20px;
+	}
+
+	.flex{
+		flex-direction: column;
+	}
+
+	.galleri-nav{
+		flex-direction: row !important; 
+		margin-right: 20px;
+	}
+
+	.inner-nav{
+		width: 95%;
+		max-width: inherit;
+		margin: 5% 20px;
+		margin-bottom: 20px;
+	}
+
+	.inner-nav a{
+		max-width: inherit;
+	}
+
+	.center{
+		justify-content: normal;
+	}
+
+	.tilmeld{
+		display: none;
+	}
+
+
 }
