@@ -9,13 +9,13 @@ function myFunction(imgs) {
 
 function galleri(img){
 	var imgID = img.id;
+
 	document.getElementById("galleri-nav").innerHTML = "";
 
 	var galleryImg = ['frivillig1.gif', 'frivillig2.jpg', 'frivillig3.gif', 'frivillig4.jpg'];
 
 	for (var i = galleryImg.length - 1; i >= 0; i--) {
 		var image = document.createElement("img");
-		var content = document.createTextNode(galleryImg[i]);
 		
 		image.setAttribute("id", "fri" + i);
 		image.setAttribute("src", "img/" + galleryImg[i]);
